@@ -1,0 +1,18 @@
+FROM golang:1.20-alpine
+
+RUN apk update && apk add --no-cache bash build-base curl git make minify nodejs npm openssl python3 upx vim
+
+RUN rm /bin/sh && ln -sf /bin/bash /bin/sh
+
+RUN adduser --disabled-password -s /bin/bash -h /home/user user
+
+ADD .bashrc /home/user/.bashrc
+ADD .vimrc /home/user/.vimrc
+ADD coc-settings.json /home/user/.vim/
+
+RUN chown user:user -R /home/user/.vi*
+
+USER user
+WORKDIR /go/src/
+
+CMD [ "/bin/bash" ]

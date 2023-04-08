@@ -1,0 +1,12 @@
+{
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "filetypes": ["go"],
+      "rootPatterns": ["go.mod"],
+      "trace.server": "verbose"
+    }
+  },
+  "suggest.enablePreselect": false,
+  "suggest.noselect": true
+}
