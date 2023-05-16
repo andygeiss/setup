@@ -12,12 +12,7 @@ build a minimal Go developer environment from scratch
 
 ## Build the base image
 
-	cd images/base ; ./build.sh
-
-## Add "vi" alias to use 
-
-	cp .bash_aliases $HOME/
-	source .bash_aliases
+	cd images/base ; ./build.sh ; source ~/.bash_aliases
 	
 ## Test the setup
 
