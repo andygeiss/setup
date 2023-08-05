@@ -1,1 +1,1 @@
-alias vi='docker run -it --user $(id -u):$(id -g) --rm --name vim -v $HOME/devops:/go base-vim'
+alias vi='docker run -it -p 3000:3000 --rm --name vim -v $HOME/devops:/go base-vim'
