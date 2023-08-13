@@ -1,1 +1,0 @@
-alias vi='docker run -it -p 3000:3000 --rm --name vim -v $HOME/devops:/go base-vim'
