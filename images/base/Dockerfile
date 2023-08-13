@@ -1,4 +1,4 @@
-FROM golang:1.20.7-alpine
+FROM golang:1.21-alpine
 
 RUN apk update && apk add --no-cache bash build-base curl git github-cli make minify nodejs npm openssl protoc python3 upx vim zsh
 
