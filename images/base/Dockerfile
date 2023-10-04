@@ -16,6 +16,8 @@ RUN git clone https://github.com/romkatv/powerlevel10k.git /home/user/.oh-my-zsh
 RUN git clone https://github.com/zsh-users/zsh-autosuggestions /home/user/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /home/user/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
+RUN git clone https://github.com/github/copilot.vim /home/user/.vim/pack/github/start/copilot.vim
+
 COPY .zshrc /home/user/.zshrc
 
 WORKDIR /go/src/
